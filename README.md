@@ -2,7 +2,7 @@
 
 This GitHub Action delivers specified [`solc`] release for a solc network.
 
-[`solc`]: https://github.com/ethereum/solidity
+[`solc`]: https://github.com/argotorg/solidity
 
 > Please note that this is an initial release and will be improved as the Solc team make decisions on versioning, naming releases etc.
 

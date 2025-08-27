@@ -30,11 +30,11 @@ if [ ! -e $RELEASES_PATH ] || [ $(($(date "+%s") - $(date -r $RELEASES_PATH "+%s
   echo "Download: releases.json"
   if [ -z $SECRET_TOKEN ]; then
     curl -o "$RELEASES_PATH.tmp" \
-      -s https://api.github.com/repos/ethereum/solidity/releases
+      -s https://api.github.com/repos/argotorg/solidity/releases
   else
     curl -o "$RELEASES_PATH.tmp" \
       -H "Authorization: Bearer ${SECRET_TOKEN}" \
-      -s https://api.github.com/repos/ethereum/solidity/releases
+      -s https://api.github.com/repos/argotorg/solidity/releases
   fi
   mv "$RELEASES_PATH.tmp" $RELEASES_PATH
 fi
